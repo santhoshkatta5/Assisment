@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chk {
+            border: solid 2px rgb(134, 134, 195);
+            width: 120px;
+            border-radius: 5px;
+        }
+
+        .img {
+            border: solid 3px rgb(133, 133, 160);
+            height: 150;
+            width: 150;
+
+        }
+
+        .sbi {
+            margin-left: 400px;
+        }
+
+        h3 {
+            border: solid 1px wheat;
+            height: 150px;
+            width: 300px;
+        }
+
+        .np {
+            display: flex;
+            flex-direction: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="np">
+        <h3>“Please click on the identical tiles to verify that you are not a
+            robot.”</h3>
+        <div id="sbi"></div>
+    </div>
+
+    <h4>Chose One </h4>
+    <div id="imgdisp">
+        <img src="https://picsum.photos/seed/picsum/200/300">
+            <img src="https://picsum.photos/200/300?grayscale">
+            <img src="https://picsum.photos/id/237/200/300">
+            <img src="https://picsum.photos/200/300/">
+            <img src="https://picsum.photos/200/300.jpg">
+    </div><br>
+
+    <div class="chk"><input type="checkbox" value="">I'm not a robot</div><br>
+
+    <button>verify</button>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
