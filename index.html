@@ -12,6 +12,10 @@
             border-radius: 5px;
         }
 
+        #sbi1 {
+            margin-left: 600px;
+        }
+
         .img {
             border: solid 3px rgb(133, 133, 160);
             height: 150;
@@ -19,8 +23,14 @@
 
         }
 
-        .sbi {
-            margin-left: 400px;
+        #imgdisp {
+            display: flex;
+            justify-content: space-between;
+            /* margin-left: 50px; */
+        }
+
+        #sbi {
+            margin-left: 24%;
         }
 
         h3 {
@@ -33,6 +43,15 @@
             display: flex;
             flex-direction: wrap;
         }
+
+        button {
+            padding: 0px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 50px;
+        }
     </style>
 </head>
 
@@ -40,22 +59,27 @@
     <div class="np">
         <h3>“Please click on the identical tiles to verify that you are not a
             robot.”</h3>
-        <div id="sbi"></div>
+        <div id="sbi"></div><br>
+        <div id="sbi1"></div>
     </div>
 
     <h4>Chose One </h4>
     <div id="imgdisp">
         <img src="https://picsum.photos/seed/picsum/200/300">
-            <img src="https://picsum.photos/200/300?grayscale">
-            <img src="https://picsum.photos/id/237/200/300">
-            <img src="https://picsum.photos/200/300/">
-            <img src="https://picsum.photos/200/300.jpg">
+        <img src="https://picsum.photos/200/300?grayscale">
+        <img src="https://picsum.photos/id/237/200/300">
+        <img src="https://picsum.photos/200/300/">
+        <img src="https://picsum.photos/200/300.jpg">
     </div><br>
 
     <div class="chk"><input type="checkbox" value="">I'm not a robot</div><br>
 
-    <button>verify</button>
+    <button id="veri" onclick="check()">Verify</button>
+    <button id="rese">Reset</button>
+
+
     <script src="script.js"></script>
+
 
 </body>
 
